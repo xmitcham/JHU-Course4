@@ -1,0 +1,99 @@
+/******** Base Styles **********/
+* {
+  font-family: Helvetica, Arial, sans serif;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.75em;
+}
+
+.sectionTitle{
+  position:absolute;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  text-align: center;
+  font-size: 1.25em;
+  width: 150px;
+  height: 23px;
+  right: 0;
+  top: 0;
+}
+
+#chicken{
+  background-color: #F08080;
+}
+
+#beef{
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
+
+#sushi{
+  background-color: #EEE8AA;
+}
+
+p{
+  color: black;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1em;
+  width: 90%;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.col-lg-4, .col-md-6, .col-sm-12, .col-md-12 {
+  position: relative;
+  float: left;
+  border: 1px solid black;
+  height: 300px;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  overflow: hidden;
+}
+
+.chickenBox {
+  background-color: #FAF0E6;
+}
+
+.beefBox {
+  background-color: #DCDCDC;
+}
+
+.sushiBox {
+  background-color: #FFF5EE;
+}
+
+.row{
+  width: 100%;
+}
+
+/********* Large Devices Only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 32.33%;
+  }
+}
+
+/********* Medium Devices Only *********/
+@media (min-width: 768) and (max-width: 991px) {
+  .col-md-6 {
+    width: 49%;
+  }
+
+  .col-md-12 {
+    width: 99%;
+    margin-top: 5%;
+  }
+}
+
+/********** Small Devices Only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    width: 99%;
+    margin-bottom: 5%;
+  }
+}
